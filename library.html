@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lend And Learn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #acd2f8;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    header {
+        background-color:#acd2f8;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1,
+    h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button.info-btn {
+        background-color:  #2b77c3;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button.info-btn:hover {
+        background-color:  #2b77c3;
+    }
+
+    .hidden {
+        display: none;
+    }
+    footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lend And Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="library.html">library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="member.html">Member</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<body>
+    <header>
+        <h1>Welcome to Our Library</h1>
+        <nav>
+            <ul>
+                <li><a href="#borrowing">Borrowing</a></li>
+                <li><a href="#digital-resources">Digital Resources</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="borrowing">
+        <h2>Borrowing Services</h2>
+        <p>Our library offers a range of borrowing services, including physical books, magazines, and audiobooks.</p>
+        <button class="info-btn" onclick="showDetails('borrowing')">More Info</button>
+        <p id="borrowing-details" class="hidden">You can borrow books for up to 3 weeks, magazines for 1 week, and
+            audiobooks for 2 weeks. Renewals are available online.</p>
+    </section>
+    <section id="digital-resources">
+        <h2>Digital Resources</h2>
+        <p>Access a wide range of digital resources including eBooks, audiobooks, and online journals.</p> <button
+            class="info-btn" onclick="showDetails('digital-resources')">More Info</button>
+        <p id="digital-resources-details" class="hidden">Our digital library is available 24/7. You can access eBooks
+            and audiobooks via our mobile app or website.</p>
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Join us for various workshops, book clubs, and author talks.</p> <button class="info-btn"
+            onclick="showDetails('events')">More Info</button>
+        <p id="events-details" class="hidden">Check our events calendar for upcoming sessions on literature, creativity,
+            and more.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Lend And Learn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
